@@ -1,0 +1,21 @@
+{
+  "variables": {
+    "timestamp": "{{isotime \"2006-01-02T15.04.05Z\"}}"
+  },
+  "builders": [
+    {
+      "type": "amazon-ebs",
+      "region": "us-east-1",
+      "source_ami": "ami-cd0f5cb6",
+      "instance_type": "t2.medium",
+      "ssh_username": "ubuntu",
+      "ami_name": "packer-io-test-{{user `timestamp`}}"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "script": "benchmark.sh"
+    }
+  ]
+}

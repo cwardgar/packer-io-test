@@ -1,0 +1,10 @@
+# See http://cloudinit.readthedocs.io/en/latest/topics/modules.html#package-update-upgrade-install
+packages: []
+
+package_update: false
+package_upgrade: false
+package_reboot_if_required: false
+
+apt_update: false
+apt_upgrade: false
+apt_reboot_if_required: false

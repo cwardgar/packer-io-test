@@ -1,0 +1,225 @@
+==> openstack: Discovering enabled extensions...
+==> openstack: Loading flavor: m1.medium
+    openstack: Verified flavor. ID: 3
+==> openstack: Creating temporary keypair: packer_5a00f038-3e18-2014-a80e-c2b62862dd3e ...
+==> openstack: Created temporary keypair: packer_5a00f038-3e18-2014-a80e-c2b62862dd3e
+==> openstack: Launching server...
+    openstack: Server ID: 172d040e-2aa9-478d-85e8-7e8ea3fe7ca5
+==> openstack: Waiting for server to become ready...
+==> openstack: Creating floating IP...
+    openstack: Pool: public
+    openstack: Created floating IP: 149.165.169.116
+==> openstack: Associating floating IP with server...
+    openstack: IP: 149.165.169.116
+    openstack: Added floating IP 149.165.169.116 to instance!
+==> openstack: Waiting for SSH to become available...
+==> openstack: Connected to SSH!
+==> openstack: Provisioning with shell script: wait-for-system-updates.sh
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack:   1848  1848  1896  1896  1896  2590  2596  2596  2596  2596  2596  3693  3693  3693  3693  3693  3693  5072  5072  5072  5072  5072  5072  5072  5072  5072  5072  5072  5072  5072  5072  7863  7863  7863  7863  7863  7863  7863  7863  7863  7863  7863  7863  7863  7863  7863  7863  7863  7863  7863  7863  7863  7863  7863 19694 19740File has been free for 15 consecutive seconds. Waited 207 seconds total.
+==> openstack: Provisioning with shell script: benchmark.sh
+    openstack: Hit:1 http://zone-r2.clouds.archive.ubuntu.com/ubuntu xenial InRelease
+    openstack: Hit:2 http://security.ubuntu.com/ubuntu xenial-security InRelease
+    openstack: Hit:3 http://zone-r2.clouds.archive.ubuntu.com/ubuntu xenial-updates InRelease
+    openstack: Hit:4 http://zone-r2.clouds.archive.ubuntu.com/ubuntu xenial-backports InRelease
+    openstack: Reading package lists...
+    openstack: Reading package lists...
+    openstack: Building dependency tree...
+    openstack: Reading state information...
+    openstack: The following packages were automatically installed and are no longer required:
+    openstack:   libllvm3.8 libmircommon5 linux-headers-4.4.0-62
+    openstack:   linux-headers-4.4.0-62-generic linux-headers-4.4.0-79
+    openstack:   linux-headers-4.4.0-79-generic linux-image-4.4.0-62-generic
+    openstack:   linux-image-4.4.0-79-generic
+    openstack: Use 'sudo apt autoremove' to remove them.
+    openstack: The following additional packages will be installed:
+    openstack:   libaio1 libboost-iostreams1.58.0 libboost-random1.58.0 libboost-thread1.58.0
+    openstack:   libibverbs1 libnspr4 libnss3 libnss3-nssdb librados2 librbd1 librdmacm1
+    openstack: Suggested packages:
+    openstack:   gnuplot gfio
+    openstack: The following NEW packages will be installed:
+    openstack:   fio ioping libaio1 libboost-iostreams1.58.0 libboost-random1.58.0
+    openstack:   libboost-thread1.58.0 libibverbs1 libnspr4 libnss3 libnss3-nssdb librados2
+    openstack:   librbd1 librdmacm1
+    openstack: 0 upgraded, 13 newly installed, 0 to remove and 0 not upgraded.
+    openstack: Need to get 5,642 kB of archives.
+    openstack: After this operation, 19.6 MB of additional disk space will be used.
+    openstack: Get:1 http://zone-r2.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 libaio1 amd64 0.3.110-2 [6,356 B]
+    openstack: Get:2 http://zone-r2.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 libibverbs1 amd64 1.1.8-1.1ubuntu2 [25.0 kB]
+    openstack: Get:3 http://zone-r2.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libboost-iostreams1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [29.0 kB]
+    openstack: Get:4 http://zone-r2.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libboost-random1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [11.7 kB]
+    openstack: Get:5 http://zone-r2.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libboost-thread1.58.0 amd64 1.58.0+dfsg-5ubuntu3.1 [47.0 kB]
+    openstack: Get:6 http://zone-r2.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libnspr4 amd64 2:4.13.1-0ubuntu0.16.04.1 [112 kB]
+    openstack: Get:7 http://zone-r2.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libnss3-nssdb all 2:3.28.4-0ubuntu0.16.04.3 [10.6 kB]
+    openstack: Get:8 http://zone-r2.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libnss3 amd64 2:3.28.4-0ubuntu0.16.04.3 [1,148 kB]
+    openstack: Get:9 http://zone-r2.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 librados2 amd64 10.2.7-0ubuntu0.16.04.1 [1,642 kB]
+    openstack: Get:10 http://zone-r2.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 librbd1 amd64 10.2.7-0ubuntu0.16.04.1 [2,180 kB]
+    openstack: Get:11 http://zone-r2.clouds.archive.ubuntu.com/ubuntu xenial/main amd64 librdmacm1 amd64 1.0.21-1 [49.1 kB]
+    openstack: Get:12 http://zone-r2.clouds.archive.ubuntu.com/ubuntu xenial/universe amd64 fio amd64 2.2.10-1ubuntu1 [368 kB]
+    openstack: Get:13 http://zone-r2.clouds.archive.ubuntu.com/ubuntu xenial/universe amd64 ioping amd64 0.9-2 [13.3 kB]
+    openstack: debconf: unable to initialize frontend: Dialog
+    openstack: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+    openstack: debconf: falling back to frontend: Readline
+    openstack: debconf: unable to initialize frontend: Readline
+    openstack: debconf: (This frontend requires a controlling tty.)
+    openstack: debconf: falling back to frontend: Teletype
+    openstack: dpkg-preconfigure: unable to re-open stdin:
+    openstack: Fetched 5,642 kB in 1s (2,990 kB/s)
+    openstack: Selecting previously unselected package libaio1:amd64.
+    openstack: (Reading database ... 171194 files and directories currently installed.)
+    openstack: Preparing to unpack .../libaio1_0.3.110-2_amd64.deb ...
+    openstack: Unpacking libaio1:amd64 (0.3.110-2) ...
+    openstack: Selecting previously unselected package libibverbs1.
+    openstack: Preparing to unpack .../libibverbs1_1.1.8-1.1ubuntu2_amd64.deb ...
+    openstack: Unpacking libibverbs1 (1.1.8-1.1ubuntu2) ...
+    openstack: Selecting previously unselected package libboost-iostreams1.58.0:amd64.
+    openstack: Preparing to unpack .../libboost-iostreams1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+    openstack: Unpacking libboost-iostreams1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+    openstack: Selecting previously unselected package libboost-random1.58.0:amd64.
+    openstack: Preparing to unpack .../libboost-random1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+    openstack: Unpacking libboost-random1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+    openstack: Selecting previously unselected package libboost-thread1.58.0:amd64.
+    openstack: Preparing to unpack .../libboost-thread1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb ...
+    openstack: Unpacking libboost-thread1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+    openstack: Selecting previously unselected package libnspr4:amd64.
+    openstack: Preparing to unpack .../libnspr4_2%3a4.13.1-0ubuntu0.16.04.1_amd64.deb ...
+    openstack: Unpacking libnspr4:amd64 (2:4.13.1-0ubuntu0.16.04.1) ...
+    openstack: Selecting previously unselected package libnss3-nssdb.
+    openstack: Preparing to unpack .../libnss3-nssdb_2%3a3.28.4-0ubuntu0.16.04.3_all.deb ...
+    openstack: Unpacking libnss3-nssdb (2:3.28.4-0ubuntu0.16.04.3) ...
+    openstack: Selecting previously unselected package libnss3:amd64.
+    openstack: Preparing to unpack .../libnss3_2%3a3.28.4-0ubuntu0.16.04.3_amd64.deb ...
+    openstack: Unpacking libnss3:amd64 (2:3.28.4-0ubuntu0.16.04.3) ...
+    openstack: Selecting previously unselected package librados2.
+    openstack: Preparing to unpack .../librados2_10.2.7-0ubuntu0.16.04.1_amd64.deb ...
+    openstack: Unpacking librados2 (10.2.7-0ubuntu0.16.04.1) ...
+    openstack: Selecting previously unselected package librbd1.
+    openstack: Preparing to unpack .../librbd1_10.2.7-0ubuntu0.16.04.1_amd64.deb ...
+    openstack: Unpacking librbd1 (10.2.7-0ubuntu0.16.04.1) ...
+    openstack: Selecting previously unselected package librdmacm1.
+    openstack: Preparing to unpack .../librdmacm1_1.0.21-1_amd64.deb ...
+    openstack: Unpacking librdmacm1 (1.0.21-1) ...
+    openstack: Selecting previously unselected package fio.
+    openstack: Preparing to unpack .../fio_2.2.10-1ubuntu1_amd64.deb ...
+    openstack: Unpacking fio (2.2.10-1ubuntu1) ...
+    openstack: Selecting previously unselected package ioping.
+    openstack: Preparing to unpack .../ioping_0.9-2_amd64.deb ...
+    openstack: Unpacking ioping (0.9-2) ...
+    openstack: Processing triggers for libc-bin (2.23-0ubuntu9) ...
+    openstack: Processing triggers for man-db (2.7.5-1) ...
+    openstack: Setting up libaio1:amd64 (0.3.110-2) ...
+    openstack: Setting up libibverbs1 (1.1.8-1.1ubuntu2) ...
+    openstack: Setting up libboost-iostreams1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+    openstack: Setting up libboost-random1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+    openstack: Setting up libboost-thread1.58.0:amd64 (1.58.0+dfsg-5ubuntu3.1) ...
+    openstack: Setting up libnspr4:amd64 (2:4.13.1-0ubuntu0.16.04.1) ...
+    openstack: Setting up librdmacm1 (1.0.21-1) ...
+    openstack: Setting up ioping (0.9-2) ...
+    openstack: Setting up libnss3-nssdb (2:3.28.4-0ubuntu0.16.04.3) ...
+    openstack: Setting up libnss3:amd64 (2:3.28.4-0ubuntu0.16.04.3) ...
+    openstack: Setting up librados2 (10.2.7-0ubuntu0.16.04.1) ...
+    openstack: Setting up librbd1 (10.2.7-0ubuntu0.16.04.1) ...
+    openstack: Setting up fio (2.2.10-1ubuntu1) ...
+    openstack: Processing triggers for libc-bin (2.23-0ubuntu9) ...
+    openstack: test: (g=0): rw=randrw, bs=4K-4K/4K-4K/4K-4K, ioengine=libaio, iodepth=64
+    openstack: fio-2.2.10
+    openstack: Starting 1 process
+    openstack: test: Laying out IO file(s) (1 file(s) / 4096MB)
+    openstack:
+    openstack: test: (groupid=0, jobs=1): err= 0: pid=20417: Mon Nov  6 23:54:18 2017
+    openstack:   read : io=3071.7MB, bw=2778.1KB/s, iops=694, runt=1131865msec
+    openstack:   write: io=1024.4MB, bw=948955B/s, iops=231, runt=1131865msec
+    openstack:   cpu          : usr=0.88%, sys=3.44%, ctx=901203, majf=0, minf=9
+    openstack:   IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.1%, 32=0.1%, >=64=100.0%
+    openstack:      submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+    openstack:      complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+    openstack:      issued    : total=r=786347/w=262229/d=0, short=r=0/w=0/d=0, drop=r=0/w=0/d=0
+    openstack:      latency   : target=0, window=0, percentile=100.00%, depth=64
+    openstack:
+    openstack: Run status group 0 (all jobs):
+    openstack:    READ: io=3071.7MB, aggrb=2778KB/s, minb=2778KB/s, maxb=2778KB/s, mint=1131865msec, maxt=1131865msec
+    openstack:   WRITE: io=1024.4MB, aggrb=926KB/s, minb=926KB/s, maxb=926KB/s, mint=1131865msec, maxt=1131865msec
+    openstack:
+    openstack: Disk stats (read/write):
+    openstack:   sda: ios=786378/262388, merge=0/146, ticks=72161480/1354420, in_queue=73556908, util=100.00%
+    openstack: 4 KiB from . (ext4 /dev/sda1): request=1 time=344 us
+    openstack: 4 KiB from . (ext4 /dev/sda1): request=2 time=315 us
+    openstack: 4 KiB from . (ext4 /dev/sda1): request=3 time=315 us
+    openstack: 4 KiB from . (ext4 /dev/sda1): request=4 time=616 us
+    openstack: 4 KiB from . (ext4 /dev/sda1): request=5 time=315 us
+    openstack: 4 KiB from . (ext4 /dev/sda1): request=6 time=310 us
+    openstack: 4 KiB from . (ext4 /dev/sda1): request=7 time=300 us
+    openstack: 4 KiB from . (ext4 /dev/sda1): request=8 time=368 us
+    openstack: 4 KiB from . (ext4 /dev/sda1): request=9 time=346 us
+    openstack: 4 KiB from . (ext4 /dev/sda1): request=10 time=328 us
+    openstack:
+    openstack: --- . (ext4 /dev/sda1) ioping statistics ---
+    openstack: 10 requests completed in 9.01 s, 2.81 k iops, 11.0 MiB/s
+    openstack: min/avg/max/mdev = 300 us / 355 us / 616 us / 88 us
+==> openstack: Stopping server: 172d040e-2aa9-478d-85e8-7e8ea3fe7ca5 ...
+    openstack: Waiting for server to stop: 172d040e-2aa9-478d-85e8-7e8ea3fe7ca5 ...
+==> openstack: Creating the image: packer-io-test-2017-11-06T23:28:55Z
+    openstack: Image: 251054bd-4b4c-442a-864a-8824341bbe60
+==> openstack: Waiting for image packer-io-test-2017-11-06T23:28:55Z (image id: 251054bd-4b4c-442a-864a-8824341bbe60) to become ready...
+==> openstack: Deleted temporary floating IP 149.165.169.116
+==> openstack: Terminating the source server: 172d040e-2aa9-478d-85e8-7e8ea3fe7ca5 ...
+==> openstack: Deleting temporary keypair: packer_5a00f038-3e18-2014-a80e-c2b62862dd3e ...
+Build 'openstack' finished.
+
+==> Builds finished. The artifacts of successful builds are:
+--> openstack: An image was created: 251054bd-4b4c-442a-864a-8824341bbe60
