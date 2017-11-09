@@ -1,0 +1,59 @@
+$ packer build -color=false -debug openstack.json
+Debug mode enabled. Builds will not be parallelized.
+==> openstack: Discovering enabled extensions...
+==> openstack: Pausing after run of step 'StepLoadExtensions'. Press enter to continue.
+==> openstack: Loading flavor: m1.medium
+    openstack: Verified flavor. ID: 3
+==> openstack: Pausing after run of step 'StepLoadFlavor'. Press enter to continue.
+==> openstack: Creating temporary keypair: packer_5a04ae49-de4d-d868-b12a-c2c0a2877d15 ...
+==> openstack: Created temporary keypair: packer_5a04ae49-de4d-d868-b12a-c2c0a2877d15
+    openstack: Saving key for debug purposes: os_openstack.pem
+==> openstack: Pausing after run of step 'StepKeyPair'. Press enter to continue.
+==> openstack: Launching server...
+    openstack: Server ID: 18d1b5d0-7385-4037-9338-7606635a93b7
+==> openstack: Waiting for server to become ready...
+
+==> openstack: Pausing after run of step 'StepRunSourceServer'. Press enter to continue. ==> openstack: Pausing after run of step 'StepGetPassword'. Press enter to continue.
+==> openstack: Pausing after run of step 'StepWaitForRackConnect'. Press enter to continue.
+==> openstack: Creating floating IP...
+    openstack: Pool: public
+    openstack: Created floating IP: 149.165.156.229
+==> openstack: Associating floating IP with server...
+    openstack: IP: 149.165.156.229
+    openstack: Added floating IP 149.165.156.229 to instance!
+==> openstack: Pausing after run of step 'StepAllocateIp'. Press enter to continue.
+==> openstack: Waiting for SSH to become available...
+==> openstack: Connected to SSH!
+==> openstack: Pausing after run of step 'StepConnect'. Press enter to continue.
+==> openstack: Provisioning with shell script: wait-for-system-updates.sh
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack: /var/lib/dpkg/lock:
+    openstack:   2351  2607  3695  3695  3695  5062  5062  5062  5062  5062  5062  5062  8000  8000  8000  8000  8000  8000  8000  8000  8000  8000  8000  8000  8000  8000 19765 19999File has been free for 15 consecutive seconds. Waited 99 seconds total.
+==> openstack: Provisioning with shell script: benchmark.sh
+...
