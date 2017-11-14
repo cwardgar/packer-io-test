@@ -5,9 +5,9 @@
   "builders": [
     {
       "type": "openstack",
-      "flavor": "m1.medium",
+      "flavor": "m1.tiny",
       "source_image_name": "JS-API-Featured-Ubuntu16-Oct-25-2017",
-      "image_name": "packer-io-test-{{user `timestamp`}}",
+      "image_name": "packer-base-image-{{user `timestamp`}}",
       "ssh_username": "ubuntu",
       "networks": [
         "a180e538-acac-42cc-bdfa-ab93d068af0b"
@@ -22,7 +22,20 @@
   "provisioners": [
     {
       "type": "shell",
-      "script": "wait-for-system-updates.sh"
+      "inline": "sudo systemctl stop 'apt*'"
+    },
+    {
+      "type": "file",
+      "source": "wait-for-system-updates.sh",
+      "destination": "/tmp/wait-for-system-updates.sh"
+    },
+    {
+      "type": "shell",
+      "inline": ["/tmp/wait-for-system-updates.sh /var/lib/dpkg/lock /var/lib/apt/lists/lock"]
+    },
+    {
+      "type": "shell",
+      "inline": ["sudo apt-get purge -y unattended-upgrades"]
     }
   ]
 }
