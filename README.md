@@ -1,4 +1,5 @@
-THIS IS A TEST!
+TEST 1
+TEST 2
 
 # packer-io-test
 
